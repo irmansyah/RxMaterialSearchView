@@ -41,7 +41,7 @@ this library rxjava2 version from material search view https://github.com/Miguel
 ```
 **Add define it in the *onCreateOptionsMenu*:**
 ```kotlin
-	override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater?.inflate(R.menu.menu_team, menu)
         val item = menu?.findItem(R.id.action_search)
         search_view.setMenuItem(item)
