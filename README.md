@@ -61,14 +61,16 @@ this library rxjava2 version from material search view https://github.com/Miguel
 ```
 **Set the listeners:**
 ```kotlin
-	search_view.showSearch()
-    compositeDisposable.add(search_view.createObservable()
-        .subscribeOn(Schedulers.io())
-        .observeOn(AndroidSchedulers.mainThread())
-        .subscribe {
+	fun setSearchView() {
+	    search_view.showSearch()
+	    compositeDisposable.add(search_view.createObservable()
+		.subscribeOn(Schedulers.io())
+		.observeOn(AndroidSchedulers.mainThread())
+		.subscribe {
 
-            Log.i("MainActivity", "Searchview : $it")
+		    Log.i("MainActivity", "Searchview : $it")
 
-        })
-    
+		})
+
+	}    
 ```
