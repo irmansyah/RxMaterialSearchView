@@ -5,7 +5,11 @@ this library rxjava2 version from material search view https://github.com/Miguel
 **Add the dependencies to your gradle file:**
 ```javascript
 	dependencies {
-    	implementation 'com.github.irmansyah:RxMaterialSearchView:v1.0.0'
+    		implementation 'com.github.irmansyah:RxMaterialSearchView:v1.0.0'
+		
+		// reactive
+    		implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjava2Version"
+    		implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroidVersion"
 	}
 ```
 
@@ -59,7 +63,7 @@ this library rxjava2 version from material search view https://github.com/Miguel
         }
     }
 ```
-**Set the listeners:**
+**How to use:**
 ```kotlin
 	fun setSearchView() {
 	    search_view.showSearch()
