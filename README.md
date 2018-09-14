@@ -12,7 +12,15 @@ this library rxjava2 version from material search view https://github.com/Miguel
     		implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroidVersion"
 	}
 ```
-
+**Add maven:**
+```javascript
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
 **Add MaterialSearchView to your layout file along with the Toolbar** *(Add this block at the bottom of your layout, in order to display it over the rest of the view)*:
 
 ```xml
